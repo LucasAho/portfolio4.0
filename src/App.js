@@ -1,16 +1,17 @@
-import Header from "./components/Header/Header";
-import Portfolio from "./components/Portfolio/Portfolio";
-import Blog from "./components/Blog/Blog";
-import Footer from "./components/Footer/Footer";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import './app.scss';
+import PortfolioCompiler from "./components/Compilers/PortfolioCompiler";
+import ContactCompiler from "./components/Compilers/ContactCompiler";
 
 function App() {
   return (
     <div className="App">
-      <Header />
-      <Portfolio />
-      <Blog />
-      <Footer />
+      <Router>
+        <Routes>
+          <Route exact path='/' element={<PortfolioCompiler />}></Route>
+          <Route exact path='/contact' element={<ContactCompiler />}></Route>
+        </Routes>
+      </Router>
     </div>
   );
 }

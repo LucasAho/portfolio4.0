@@ -24,3 +24,24 @@
         font-weight: 100;
     }
 }
+
+.blog-cards {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: "jumbo side"
+        "jumbo side";
+    column-gap: 10px;
+    padding: 15px;
+}
+
+.jumbo-card {
+    grid-area: 'jumbo';
+    min-height: 300px;
+    background-color: green;
+}
+
+.side-card {
+    grid-area: 'side';
+    min-height: 300px;
+    background-color: blue;
+}

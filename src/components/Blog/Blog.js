@@ -10,8 +10,17 @@ const Blog = () => {
                 <h4>A place where I share poems, short stories, and worldbuilding wikis</h4>
             </div>
             <div className='blog-cards'>
-                <div className=''>
-
+                <div className='jumbo-card'>
+                    <img src=''></img>
+                    <h1>Most Recent Article</h1>
+                </div>
+                <div className='side-card-container'>
+                    <div className='side-card'>
+                        Side Card 1
+                    </div>
+                    <div className='side-card'>
+                        Side Card 2
+                    </div>
                 </div>
             </div>
         </div>

@@ -1,0 +1,20 @@
+@import '../../common/colors.scss';
+
+.footer-container {
+    background-color: $primary-color;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+
+    a {
+        margin: 10px;
+        color: white;
+    }
+
+    Link {
+        background-color: transparent;
+        border: none;
+        margin: 10px;
+        color: white;
+    }
+}
